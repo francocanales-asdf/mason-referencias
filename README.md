@@ -5,4 +5,4 @@ Dos propuestas de portada con la identidad de Mason Natural, armadas sobre la es
 - Estilo Arrae: `/arrae/`
 - Estilo Seed: `/seed/`
 
-Fotos de personas: Pexels (licencia libre), de Mastercowley y Miriam Alonso.
+Fotos de personas: elegidas por el equipo (Pexels: Vlada Karpovich; banco de imágenes para la foto de montañas).
