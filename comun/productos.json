@@ -1,0 +1,206 @@
+[
+ {
+  "id": 111755,
+  "corto": "ULTRA Omega 3 (600 mg)",
+  "nombre": "Ultra Fish Oil 1000 mg | 600 mg Omega 3 (60 SOFTG)",
+  "precio": 129.89,
+  "cat": "Corazón",
+  "forma": "cápsula blanda",
+  "familia": "omega-3",
+  "activo": [
+   "de omega‑3 por cápsula (300 mg de EPA + 200 mg de DHA)",
+   600,
+   "mg de omega‑3"
+  ],
+  "claim": null,
+  "pag": null,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/ultra-fish-oil-1000-mg-60-softg/"
+ },
+ {
+  "id": 500,
+  "corto": "Omega 3 1000 mg",
+  "nombre": "Omega 3 Aceite de Pescado 1000 mg",
+  "precio": 76.9,
+  "cat": "Corazón",
+  "forma": "cápsula blanda",
+  "familia": "omega-3",
+  "activo": [
+   "de omega‑3 (EPA 180 mg + DHA 120 mg) en 1000 mg de aceite de pescado",
+   300,
+   "mg de omega‑3"
+  ],
+  "claim": "El EPA y el DHA contribuyen al buen funcionamiento del corazón.",
+  "pag": 112,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/omega-3-fish-oil-1000-mg/"
+ },
+ {
+  "id": 100965,
+  "corto": "Glicinato de Magnesio Plus",
+  "nombre": "Glicinato de Magnesio Plus (60 CAP)",
+  "precio": 99.9,
+  "cat": "Sistema Nervioso",
+  "forma": "cápsula",
+  "familia": "magnesio",
+  "activo": [
+   "de magnesio elemental (como glicinato) + 1 mg de BioPerine",
+   120,
+   "mg de magnesio"
+  ],
+  "claim": "El magnesio contribuye al buen funcionamiento del sistema nervioso y muscular.",
+  "pag": 97,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/magnesium-glycinate-plus-60-cap/"
+ },
+ {
+  "id": 100963,
+  "corto": "Citrato de Magnesio",
+  "nombre": "Citrato de Magnesio (60 SOFTG)",
+  "precio": 89.9,
+  "cat": "Sistema Nervioso",
+  "forma": "cápsula blanda",
+  "familia": "magnesio",
+  "activo": [
+   "de magnesio (como citrato)",
+   125,
+   "mg de magnesio"
+  ],
+  "claim": "El magnesio contribuye al buen funcionamiento del sistema nervioso y muscular.",
+  "pag": 102,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/magnesium-citrate-60-softg/"
+ },
+ {
+  "id": 518,
+  "corto": "Colágeno 1500 + Biotina + C",
+  "nombre": "Colágeno 1500 Plus + Biotina + Vitamina C",
+  "precio": 94.9,
+  "cat": "Belleza",
+  "forma": "cápsula",
+  "familia": "colageno",
+  "activo": [
+   "de colágeno hidrolizado por cápsula (1500 mg en 3 cápsulas), con biotina y vitamina C",
+   500,
+   "mg de colágeno"
+  ],
+  "claim": "La vitamina C contribuye a la adecuada formación de colágeno para el buen funcionamiento de la piel.",
+  "pag": 51,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/collagen-1500-plus-biotin-vitamin-c/"
+ },
+ {
+  "id": 100961,
+  "corto": "B12 3000 mcg sublingual",
+  "nombre": "B-12 3000 MCG (60 TAB SUBL)",
+  "precio": 119.9,
+  "cat": "Energía",
+  "forma": "tableta sublingual",
+  "familia": "vitamina-b12",
+  "activo": [
+   "de vitamina B12 (cianocobalamina)",
+   3000,
+   "mcg de B12"
+  ],
+  "claim": "La Vitamina B-12 ayuda en el adecuado metabolismo energético.",
+  "pag": 19,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/energia/b-12-3000-mcg-60-tab-subl/"
+ },
+ {
+  "id": 86299,
+  "corto": "Vitamina D3 2000 UI",
+  "nombre": "D3 2000 UI (60 SOFTG)",
+  "precio": 80.9,
+  "cat": "Huesos",
+  "forma": "cápsula blanda",
+  "familia": "vitamina-d",
+  "activo": [
+   "de vitamina D3 (50 mcg)",
+   2000,
+   "UI de D3"
+  ],
+  "claim": "La vitamina D ayuda en el mantenimiento de huesos y dientes.",
+  "pag": 56,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/d3-2000-ui-60-softg/"
+ },
+ {
+  "id": 36089,
+  "corto": "Biotina 10 000 mcg + Keratina",
+  "nombre": "Biotina 10,000 Plus Keratina 100 MG",
+  "precio": 112.9,
+  "cat": "Belleza",
+  "forma": "tableta",
+  "familia": "biotina",
+  "activo": [
+   "de biotina + 100 mg de keratina",
+   10000,
+   "mcg de biotina"
+  ],
+  "claim": "La biotina contribuye al mantenimiento de la piel y el cabello en condiciones saludables.",
+  "pag": 25,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/biotina-10000-mcg-plus-keratina-100-mg-60-tab/"
+ },
+ {
+  "id": 480,
+  "corto": "Vitamina C 1000 mg",
+  "nombre": "Vitamina C-1000 MG 100 tabletas",
+  "precio": 63.9,
+  "cat": "Defensas",
+  "forma": "tableta",
+  "familia": "vitamina-c-zinc-selenio",
+  "activo": [
+   "de vitamina C (ácido ascórbico)",
+   1000,
+   "mg de vitamina C"
+  ],
+  "claim": "La vitamina C contribuye al funcionamiento normal del sistema inmunitario.",
+  "pag": 144,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/defensas/pure-c-1000-mg/"
+ },
+ {
+  "id": 494,
+  "corto": "Citrato de Calcio + D3",
+  "nombre": "Citrato de Calcio con Vitamina D3",
+  "precio": 71.9,
+  "cat": "Huesos",
+  "forma": "tableta",
+  "familia": "calcio",
+  "activo": [
+   "de calcio elemental (como citrato), con vitamina D3",
+   315,
+   "mg de calcio"
+  ],
+  "claim": "El calcio ayuda a mantener la salud de los huesos.",
+  "pag": 42,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/calcium-citrate-with-vitamin-d3/"
+ },
+ {
+  "id": 564,
+  "corto": "Complejo B Plus con Electrolitos",
+  "nombre": "Complejo B Plus con Electrolitos",
+  "precio": 59.9,
+  "cat": "Complejo B",
+  "forma": "tableta",
+  "familia": "complejo-b",
+  "activo": [
+   "vitaminas del complejo B con electrolitos",
+   null,
+   ""
+  ],
+  "claim": "Con Vitamina B1 (Tiamina), que ayuda en la producción de energía.",
+  "pag": 22,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/complejo-b/b-complex-con-electrolitos/"
+ },
+ {
+  "id": 84579,
+  "corto": "Vitatrum 30 tabletas",
+  "nombre": "Vitatrum Multivitamin & Multimineral (30 TAB)",
+  "precio": 37.9,
+  "cat": "Multivitamínico",
+  "forma": "tableta",
+  "familia": "multivitaminico",
+  "activo": [
+   "vitaminas y minerales",
+   null,
+   ""
+  ],
+  "claim": null,
+  "pag": null,
+  "url": "https://masonnatural.pe/suplementos-naturales-vitaminas/multivitaminico/vitatrum-multivitamin-multimineral-30-tab/"
+ }
+]
