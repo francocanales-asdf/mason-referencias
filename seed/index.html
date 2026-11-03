@@ -8,7 +8,7 @@
 <link rel="icon" href="../comun/img/favicon.svg">
 <link rel="stylesheet" href="../comun/base.css">
 <style>
-/* Estructura de seed.com (2/11/2026) con identidad Mason: editorial, mucho aire, ciencia explicada con datos de etiqueta. */
+/* Estructura de seed.com con identidad Mason. v2 (3/11/2026): eje «te acompañamos» en lugar de «compara la etiqueta» (feedback de Víctor). */
 body{background:#FAFAF7}
 header{position:sticky;top:0;z-index:50;background:rgba(250,250,247,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
@@ -142,6 +142,42 @@ footer h4{color:var(--blanco);font-size:13px;letter-spacing:.12em;text-transform
 footer li{list-style:none;margin:10px 0}
 .legal{border-top:1px solid #2E2E2E;margin-top:64px;padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:12px;color:#8D8D8D}
 .legal img{height:22px;width:auto}
+
+/* v2: pareja de la rutina */
+.rutina .par{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center}
+.rutina .par div{background:#fff;border-radius:16px;aspect-ratio:3/4;display:grid;place-items:center}
+.rutina .par img{width:78%}
+.rutina .par .mas{background:none;aspect-ratio:auto;color:var(--amarillo);font-size:44px;font-weight:800}
+.rutina .otras{margin-top:22px;font-size:14px;color:#9A9A9A}
+.rutina .otras b{color:#fff;font-weight:600}
+/* v2: ¿Cuánto te dura? */
+.dura{display:grid;grid-template-columns:1fr 1.15fr;gap:72px;align-items:center}
+@media (max-width:900px){.dura{grid-template-columns:1fr;gap:40px}}
+.dura h2{font-size:clamp(36px,4vw,58px);font-weight:600;line-height:1.02;margin:16px 0 22px}
+.dura .formula{display:inline-flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:24px;font-weight:700;font-size:16px}
+.dura .formula span{background:var(--gris);border-radius:999px;padding:8px 14px}
+.dura .formula span.r{background:var(--amarillo)}
+.barras{background:var(--blanco);border:1px solid var(--linea);border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:22px}
+.barra .t{display:flex;justify-content:space-between;gap:12px;font-size:15px;margin-bottom:8px}
+.barra .t b{color:var(--negro)}
+.barra .t span{color:var(--texto-suave);text-align:right}
+.barra .riel{height:14px;background:var(--gris);border-radius:999px;overflow:hidden}
+.barra .riel i{display:block;height:100%;background:var(--negro);border-radius:999px}
+.barra .riel i.y{background:var(--amarillo)}
+.barra .dias{font-size:28px;font-weight:700;letter-spacing:-.02em;color:var(--negro);margin-top:6px}
+.barra .dias small{font-size:14px;font-weight:500;color:var(--texto-suave)}
+/* v2: dudas */
+.dudas{display:grid;grid-template-columns:1.1fr 1fr;border-radius:28px;overflow:hidden;background:var(--amarillo-suave)}
+@media (max-width:900px){.dudas{grid-template-columns:1fr}}
+.dudas .chat{background:#fff;padding:48px clamp(20px,4vw,56px);display:flex;flex-direction:column;gap:14px;justify-content:center}
+.burbuja{max-width:85%;border-radius:20px 20px 20px 6px;background:var(--gris);padding:14px 18px;font-size:16px}
+.burbuja.mason{align-self:flex-end;border-radius:20px 20px 6px 20px;background:var(--negro);color:#fff}
+.dudas .texto{padding:64px clamp(24px,4vw,64px);display:flex;flex-direction:column;justify-content:center}
+.dudas h2{font-size:clamp(34px,3.6vw,52px);font-weight:600;line-height:1.02;margin:14px 0 18px}
+.dudas p{font-size:17px;color:var(--texto-suave);margin-bottom:22px}
+.pagos{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.pagos span{border:1.5px solid var(--negro);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:600}
+.notas{font-size:13px;color:var(--negro);margin-top:28px;opacity:.7;max-width:70ch;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;gap:4px}
 </style>
 </head>
 <body>
@@ -151,9 +187,9 @@ footer li{list-style:none;margin:10px 0}
       <a class="logo" href="#" aria-label="Mason Natural"><img src="../comun/img/logo-negro.svg" alt="Mason Natural" width="214" height="34"></a>
       <ul>
         <li><a href="#productos">Productos</a></li>
-        <li><a href="#capsula">La etiqueta</a></li>
-        <li><a href="#educa">Guías</a></li>
-        <li><a href="#original">¿Es original?</a></li>
+        <li><a href="#rutina">Arma tu rutina</a></li>
+        <li><a href="#dura">¿Cuánto te dura?</a></li>
+        <li><a href="#dudas">Escríbenos</a></li>
       </ul>
     </div>
     <div class="der">
@@ -167,11 +203,11 @@ footer li{list-style:none;margin:10px 0}
 <section class="hero">
   <div class="texto">
     <span class="rotulo"><b>Mason Natural</b> Vitaminas y suplementos</span>
-    <h1>Tu rutina empieza por <em>leer la etiqueta.</em></h1>
-    <p>Cuánto trae cada cápsula, en qué forma y cuántos días te dura el frasco. Explicado, sin letra chica.</p>
+    <h1>Tu rutina, <em>acompañada.</em></h1>
+    <p>Te ayudamos a elegir, a armar tu combinación y a saber cuándo reponer. Y si tienes una duda, nos escribes.</p>
     <div class="acciones">
       <a class="pildora" href="#productos">Encuentra el tuyo</a>
-      <a class="pildora borde" href="#productos">Comprar</a>
+      <a class="pildora borde" href="https://wa.me/51972061284">Escríbenos por WhatsApp</a>
     </div>
   </div>
   <div class="bodegon" role="img" aria-label="Mujer sonriendo en el campo, con el pelo al viento">
@@ -181,15 +217,15 @@ footer li{list-style:none;margin:10px 0}
 
 <section class="estrella">
   <div class="envase">
-    <div class="foto"><img class="packshot" src="../comun/img/Ultra-Fish-Oil-Side.jpg" alt="ULTRA Fish Oil con su tabla nutricional"></div>
+    <div class="foto"><img class="packshot" src="../comun/img/Ultra-Fish-Oil-Front.jpg" alt="Frasco de ULTRA Fish Oil"></div>
     <div>
       <span class="rotulo"><b>Nuevo</b> Línea ULTRA</span>
       <h2>600 mg de omega‑3 en una sola cápsula.</h2>
-      <p>ULTRA Fish Oil trae 1000 mg de aceite de pescado con 600 mg de omega‑3 por cápsula blanda.<sup>1</sup></p>
+      <p>ULTRA Fish Oil: una cápsula blanda al día y el frasco te acompaña dos meses.<sup>1</sup></p>
       <div class="cifras">
-        <div><b>300</b><span>mg de EPA</span></div>
-        <div><b>200</b><span>mg de DHA</span></div>
-        <div><b>60</b><span>cápsulas blandas</span></div>
+        <div><b>600</b><span>mg de omega‑3</span></div>
+        <div><b>1</b><span>cápsula al día</span></div>
+        <div><b>60</b><span>días por frasco</span></div>
       </div>
       <a class="pildora" href="#productos">Ver ULTRA · S/ 129,89</a>
     </div>
@@ -199,85 +235,70 @@ footer li{list-style:none;margin:10px 0}
 <section class="seccion" id="productos">
   <div class="envase">
     <div class="cab">
-      <h2>Todo empieza por la etiqueta.</h2>
+      <h2>Para empezar tu rutina.</h2>
       <a class="pildora borde" href="#">Ver todos los productos</a>
     </div>
     <div class="rejilla" id="rejilla"></div>
   </div>
 </section>
 
-<section class="envase" style="padding-bottom:120px">
+<section class="envase" id="rutina" style="padding-bottom:120px">
   <div class="rutina">
     <div>
       <span class="rotulo" style="color:#9A9A9A"><b>Rutina</b> En un solo pedido</span>
-      <h2 style="margin-top:14px">Arma tu rutina <em>con la etiqueta en la mano.</em></h2>
-      <p>Omega 3, magnesio, vitamina D y complejo B: compáralos por cantidad por unidad y llévalos juntos.</p>
-      <a class="pildora amarilla" href="#productos">Armar mi rutina</a>
+      <h2 style="margin-top:14px">La combinación que <em>más se repite.</em></h2>
+      <p>Glicinato de Magnesio Plus con Omega 3 1000 mg es el par que más aparece en un mismo pedido de la tienda online.<sup>2</sup></p>
+      <a class="pildora amarilla" href="#" onclick="event.preventDefault();n+=2;document.getElementById('n').textContent=n">Llevar los dos · S/ 176,80</a>
+      <p class="otras">También se llevan juntos: <b>Glicinato + K2·D3</b> · <b>K2·D3 + Omega 3</b> · <b>Omega 3 + Zinc</b></p>
     </div>
-    <div class="fila">
+    <div class="par">
+      <div><img src="../comun/img/productos/100965.jpg" alt="Glicinato de Magnesio Plus"></div>
+      <div class="mas">+</div>
       <div><img src="../comun/img/productos/500.jpg" alt="Omega 3 1000 mg"></div>
-      <div><img src="../comun/img/productos/100963.jpg" alt="Citrato de Magnesio"></div>
-      <div><img src="../comun/img/productos/86299.jpg" alt="Vitamina D3 2000 UI"></div>
-      <div><img src="../comun/img/productos/564.jpg" alt="Complejo B Plus con Electrolitos"></div>
     </div>
   </div>
 </section>
 
-<section class="seccion" id="capsula" style="background:var(--blanco);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)">
-  <div class="envase capsula">
+<section class="seccion" id="dura" style="background:var(--blanco);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)">
+  <div class="envase dura">
     <div>
-      <span class="rotulo"><b>La etiqueta</b> Omega 3 1000 mg</span>
-      <h2>Qué hay dentro de una cápsula de 1000 mg.</h2>
-      <p style="font-size:18px;color:var(--texto-suave)">Los 1000 mg del nombre son de aceite de pescado. El omega‑3 es una parte de ese aceite: esa es la cifra que conviene comparar.</p>
-      <ol>
-        <li><span><b>1000 mg de aceite de pescado</b>La cápsula blanda completa.</span></li>
-        <li><span><b>300 mg de omega‑3</b>Lo que trae ese aceite: EPA más DHA.</span></li>
-        <li><span><b>EPA 180 mg + DHA 120 mg</b>Súmalos al comparar frascos. En ULTRA son 300 + 200 = 600 mg.</span></li>
-      </ol>
+      <span class="rotulo"><b>¿Cuánto te dura?</b> Para no quedarte sin</span>
+      <h2>Sabes cuándo reponer antes de que se acabe.</h2>
+      <p style="font-size:18px;color:var(--texto-suave)">No todos los frascos duran lo mismo: depende de cuántas unidades trae y de cuántas tomas al día.</p>
+      <div class="formula"><span>Unidades del frasco</span>÷<span>Dosis diaria</span>=<span class="r">Días de tu rutina</span></div>
     </div>
-    <div class="diagrama">
-      <svg viewBox="0 0 520 440" role="img" aria-label="Diagrama: 1000 mg de aceite de pescado contienen 300 mg de omega-3, de los cuales 180 mg son EPA y 120 mg DHA">
-        <defs><clipPath id="cap"><rect x="40" y="120" width="440" height="200" rx="100"/></clipPath></defs>
-        <rect x="40" y="120" width="440" height="200" rx="100" fill="#FFF3B0" stroke="#0F0F0F" stroke-width="2.5"/>
-        <g clip-path="url(#cap)">
-          <rect x="40" y="120" width="132" height="200" fill="#FDD000"/>
-          <rect x="40" y="120" width="79" height="200" fill="#0F0F0F"/>
-        </g>
-        <line x1="172" y1="120" x2="172" y2="320" stroke="#0F0F0F" stroke-width="2" stroke-dasharray="4 5"/>
-        <text x="80" y="226" font-family="Gilroy" font-weight="800" font-size="20" fill="#FDD000" text-anchor="middle">EPA</text>
-        <text x="146" y="226" font-family="Gilroy" font-weight="800" font-size="20" fill="#0F0F0F" text-anchor="middle">DHA</text>
-        <text x="326" y="214" font-family="Gilroy" font-weight="700" font-size="22" fill="#0F0F0F" text-anchor="middle">resto del aceite</text>
-        <text x="326" y="242" font-family="Gilroy" font-weight="500" font-size="18" fill="#5C5C5C" text-anchor="middle">700 mg</text>
-        <path d="M40 92 H480" stroke="#0F0F0F" stroke-width="2"/><path d="M40 84 V100 M480 84 V100" stroke="#0F0F0F" stroke-width="2"/>
-        <text x="260" y="70" font-family="Gilroy" font-weight="800" font-size="24" fill="#0F0F0F" text-anchor="middle">1000 mg de aceite de pescado</text>
-        <path d="M40 350 H172" stroke="#0F0F0F" stroke-width="2"/><path d="M40 342 V358 M172 342 V358" stroke="#0F0F0F" stroke-width="2"/>
-        <text x="106" y="384" font-family="Gilroy" font-weight="800" font-size="22" fill="#0F0F0F" text-anchor="middle">300 mg omega‑3</text>
-        <text x="106" y="410" font-family="Gilroy" font-weight="500" font-size="16" fill="#5C5C5C" text-anchor="middle">EPA 180 + DHA 120</text>
-      </svg>
-      <p class="fuente">Proporciones a escala por cápsula. Fuente: rotulado de Omega 3 1000 mg, 60 cápsulas blandas.</p>
+    <div class="barras" aria-label="Días que dura cada frasco">
+      <div class="barra"><div class="t"><b>Omega 3 1000 mg</b><span>60 cápsulas · 1 al día</span></div><div class="riel"><i style="width:100%"></i></div><div class="dias">60 <small>días</small></div></div>
+      <div class="barra"><div class="t"><b>Vitamina D3 2000 UI</b><span>60 cápsulas · 1 al día</span></div><div class="riel"><i style="width:100%"></i></div><div class="dias">60 <small>días</small></div></div>
+      <div class="barra"><div class="t"><b>K2 + D3</b><span>60 tabletas · 1 al día</span></div><div class="riel"><i style="width:100%"></i></div><div class="dias">60 <small>días</small></div></div>
+      <div class="barra"><div class="t"><b>Glicinato de Magnesio Plus</b><span>60 cápsulas · 2 al día</span></div><div class="riel"><i class="y" style="width:50%"></i></div><div class="dias">30 <small>días</small></div></div>
+      <p class="fuente">Unidades y dosis de las fichas de la tienda.<sup>1</sup></p>
     </div>
   </div>
 </section>
 
-<section class="seccion" id="educa">
+<section class="seccion" id="dudas">
   <div class="envase">
-    <div class="educa">
-      <div class="vis">
-        <img src="../comun/img/Ultra-Fish-Oil-Side.jpg" alt="Lado del frasco con la tabla nutricional">
-        <div class="lupa">Voltea<br>el frasco</div>
+    <div class="dudas">
+      <div class="chat" aria-label="Ejemplo de conversación">
+        <div class="burbuja">¿Dónde lo consigo y a cuánto está?</div>
+        <div class="burbuja">¿Lo puede tomar mi mamá?</div>
+        <div class="burbuja">Tomo un medicamento, ¿hay problema?</div>
+        <div class="burbuja mason">Te contamos dónde encontrarlo y qué dice el frasco. Lo de tu medicamento confírmalo con tu médico.</div>
       </div>
       <div class="texto">
-        <span class="rotulo"><b>Guía</b> 5 minutos</span>
-        <h2>Más que el nombre: lo que dice el lado del frasco.</h2>
-        <p>Porción, cantidad por unidad, forma del mineral y registro sanitario. Te enseñamos a leer la etiqueta de cualquier suplemento.</p>
-        <a class="pildora" href="#" style="align-self:flex-start">Leer la guía</a>
+        <span class="rotulo"><b>Escríbenos</b> WhatsApp 972 061 284</span>
+        <h2>Pregúntanos lo que le preguntarías a alguien de confianza.</h2>
+        <p>Son las dudas que más nos dejan en redes: dónde comprar, si es para cierta edad y si se puede tomar con un tratamiento.<sup>3</sup></p>
+        <div class="pagos"><span>Contra entrega</span><span>Tarjeta con Niubiz</span><span>Recojo en tienda</span></div>
+        <a class="pildora" href="https://wa.me/51972061284" style="align-self:flex-start">Escribir por WhatsApp</a>
       </div>
     </div>
   </div>
 </section>
 
 <section style="padding-bottom:120px">
-  <div class="envase cab"><h2>Historias de quienes leen la etiqueta.</h2></div>
+  <div class="envase cab"><h2>Historias de quienes ya tienen su rutina.</h2></div>
   <div class="historias">
     <div class="pendiente"><b>Historia 1</b><span class="pendiente-txt">Pendiente · UGC 9–22 dic</span></div>
     <div class="pendiente"><b>Historia 2</b><span class="pendiente-txt">Pendiente · UGC 9–22 dic</span></div>
@@ -292,7 +313,7 @@ footer li{list-style:none;margin:10px 0}
     <div>
       <span class="rotulo"><b>¿Es original?</b> Verifícalo</span>
       <h2 style="margin-top:14px">Cada frasco Mason lleva su registro sanitario.</h2>
-      <p>Búscalo en la etiqueta: empieza con «DE‑». Escríbelo aquí y te decimos a qué producto corresponde.</p>
+      <p>Lo encuentras en el frasco y empieza con «DE‑». Escríbelo aquí y te decimos a qué producto corresponde.</p>
     </div>
     <div>
       <form class="verificar" onsubmit="event.preventDefault();document.getElementById('res').textContent='Demo local: la verificación real se conecta al catálogo de registros.'">
@@ -306,18 +327,22 @@ footer li{list-style:none;margin:10px 0}
 
 <section class="cierre">
   <div class="envase">
-    <h2>Elige con la <em>etiqueta en la mano.</em></h2>
+    <h2>Tu rutina, <em>acompañada.</em></h2>
     <a class="pildora" href="#productos">Comprar ahora</a>
-    <p><sup>1</sup> Rotulado de ULTRA Fish Oil 1000 mg, 60 cápsulas blandas. Precios de la tienda al 8/10/2026.</p>
+    <div class="notas">
+      <span><sup>1</sup> Unidades, dosis diaria y precios de las fichas de masonnatural.pe al 8/10/2026.</span>
+      <span><sup>2</sup> Pedidos de la tienda online, 2026.</span>
+      <span><sup>3</sup> Comentarios en redes de Mason analizados en noviembre de 2026.</span>
+    </div>
   </div>
 </section>
 
 <footer>
   <div class="envase">
     <div class="pie">
-      <p class="grande">Vitaminas y suplementos, con la etiqueta explicada.</p>
+      <p class="grande">Vitaminas y suplementos, con alguien al otro lado.</p>
       <div><h4>Tienda</h4><ul><li>Productos</li><li>Omega 3</li><li>Magnesio</li><li>Vitaminas</li></ul></div>
-      <div><h4>Aprender</h4><ul><li>Cómo leer la etiqueta</li><li>Tipos de magnesio</li><li>Vitamina D: UI y mcg</li><li>¿Cuánto me dura?</li></ul></div>
+      <div><h4>Aprender</h4><ul><li>Arma tu rutina</li><li>¿Cuánto me dura?</li><li>Tipos de magnesio</li><li>Vitamina D: UI y mcg</li></ul></div>
       <div><h4>Ayuda</h4><ul><li>Envíos y pagos</li><li>Tiendas</li><li>Libro de reclamaciones</li><li>Privacidad</li></ul></div>
     </div>
     <div class="legal"><img src="../comun/img/logo.svg" alt="Mason Natural" width="214" height="34"><span>Clon local de referencia: estructura de seed.com con identidad Mason. No publicado.</span></div>
@@ -333,7 +358,7 @@ fetch('../comun/productos.json').then(r=>r.json()).then(lista=>{
   const P=Object.fromEntries(lista.map(p=>[p.id,p]));
   document.getElementById('rejilla').innerHTML=CUATRO.map(([id,c,fam])=>{const p=P[id];return `
     <article class="prod"><div class="foto" style="background:${c}"><img src="../comun/img/productos/${id}.jpg" alt="${p.nombre}" loading="lazy"></div>
-    <div class="info"><small>${fam}</small><h3>${p.corto}</h3><p>${p.claim||''}</p>
+    <div class="info"><small>${fam}</small><h3>${p.corto}</h3><p>${id===500?'Aceite de pescado 1000 mg. 60 cápsulas blandas, una al día.':(p.claim||'')}</p>
     <div class="pie"><b>${soles(p.precio)}</b><a href="#" onclick="event.preventDefault();document.getElementById('n').textContent=++n">Agregar</a></div></div></article>`}).join('');
 });
 </script>
