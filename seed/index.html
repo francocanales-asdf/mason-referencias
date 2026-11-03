@@ -35,7 +35,19 @@ sup{font-size:.55em;color:var(--texto-suave);font-weight:600}
 .hero .acciones{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
 .hero .bodegon{background:#D9D5D2 url(../comun/img/personas/vlada-karpovich-4668537.jpg) 50% 30%/cover no-repeat;position:relative;overflow:hidden}
 .hero .bodegon .sello{position:absolute;top:32px;left:32px;font-size:13px;font-weight:700;background:var(--blanco);border-radius:999px;padding:8px 14px}
-@media (max-width:900px){.hero{grid-template-columns:1fr;max-height:none;min-height:0}.hero .bodegon{min-height:380px}}
+/* Móvil: la foto ocupa todo el hero y el texto va encima, abajo, sobre un velo oscuro. */
+@media (max-width:900px){
+.hero{grid-template-columns:1fr;position:relative;min-height:calc(100svh - 72px);overflow:hidden}
+.hero .bodegon{position:absolute;inset:0;background-position:50% 22%}
+.hero .bodegon .sello{top:20px;left:16px}
+.hero .texto{position:relative;z-index:1;justify-content:flex-end;padding:120px 16px 32px;background:linear-gradient(180deg,rgba(15,15,15,0) 0,rgba(15,15,15,.55) 38%,rgba(15,15,15,.82) 100%);color:var(--blanco)}
+.hero .rotulo{color:rgba(255,255,255,.85)}
+.hero h1{font-size:clamp(38px,11vw,52px);margin:14px 0 14px;color:var(--blanco)}
+.hero h1 em{color:var(--negro);background:var(--amarillo);padding:0 .08em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hero p{font-size:17px;color:rgba(255,255,255,.9)}
+.hero .acciones{margin-top:22px}
+.hero .pildora{background:var(--amarillo);color:var(--negro)}
+.hero .pildora.borde{background:transparent;color:var(--blanco);border-color:var(--blanco)}}
 
 /* Segundo hero: producto estrella con cifras. */
 .estrella{padding:120px 0;border-bottom:1px solid var(--linea)}
