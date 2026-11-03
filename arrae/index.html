@@ -82,11 +82,13 @@ header{position:sticky;top:0;z-index:50;background:var(--blanco);border-bottom:1
 
 /* Cuatro mosaicos "Shop by goal": aquí por nutriente (decisión de la web nueva). */
 .mosaicos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}
-@media (max-width:900px){.mosaicos{grid-template-columns:repeat(2,1fr)}}
-.mosaico{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:1.55/1;padding:20px;display:flex;flex-direction:column;justify-content:space-between}
-.mosaico h3{font-size:18px;font-weight:800;text-transform:uppercase;line-height:1.1;letter-spacing:.03em;max-width:12ch;position:relative;z-index:1}
-.mosaico img{position:absolute;right:14px;bottom:14px;width:42%;aspect-ratio:1;object-fit:contain;border-radius:50%;padding:6px}
-.mosaico .ir{position:absolute;top:16px;right:16px;width:34px;height:34px;border-radius:8px;background:var(--blanco);display:grid;place-items:center;z-index:1}
+@media (max-width:1100px){.mosaicos{grid-template-columns:repeat(2,1fr)}}
+.mosaico{display:grid;grid-template-columns:minmax(0,1fr) 40%;grid-template-rows:1fr auto;column-gap:12px;row-gap:14px;border-radius:14px;padding:20px;min-height:190px;transition:transform .15s}
+.mosaico:hover{transform:translateY(-2px)}
+.mosaico h3{grid-column:1;grid-row:1;font-size:17px;font-weight:800;text-transform:uppercase;line-height:1.12;letter-spacing:.03em;overflow-wrap:anywhere}
+.mosaico .ir{grid-column:1;grid-row:2;align-self:end;width:40px;height:40px;border-radius:50%;background:var(--negro);color:var(--blanco);display:grid;place-items:center;font-size:18px}
+.mosaico img{grid-column:2;grid-row:1/3;align-self:center;width:100%;aspect-ratio:1;object-fit:contain;border-radius:50%;padding:6px}
+@media (max-width:560px){.mosaicos{grid-template-columns:1fr;gap:12px;margin-top:36px}.mosaico{min-height:0;grid-template-columns:minmax(0,1fr) 108px;padding:16px 16px 16px 20px}.mosaico h3{font-size:16px;align-self:center}}
 .m1{background:var(--amarillo)}.m2{background:#FFE14D}
 .m3{background:var(--amarillo-suave)}.m4{background:var(--gris)}
 
