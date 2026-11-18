@@ -1,0 +1,859 @@
+<!doctype html><html lang='es'><head><meta charset='utf-8'><meta name='robots' content='noindex,nofollow'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Black Mason · vista previa</title><style>body{margin:0;background:#fff;padding:16px 0 40px}</style></head><body><!-- Black Mason · landing v6 (estructura de seed.com/products; colores del Brandbook Mason y Avenir) · 18 nov 2026 · bloque «HTML personalizado» de WordPress. Se muestra solo del 27/11 8:00 al 1/12 7:45 (hora de Lima). -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Black Mason v6 · estructura y medidas de seed.com/products (leídas en Chrome el 18/11/2026).
+   Solo cambian los colores (Brandbook Mason 2026) y la fuente (Avenir Next LT Pro):
+   verde Seed #1C3A13 → negro #000 (texto y botones) · fondo de la banda → amarillo #FBCA3F (Víctor 11/11: sin fondo negro)
+   verde claro Seed #D3FA99 → amarillo #FBCA3F · tarjeta Seed #F6F7EF → pastel de cada producto · destacado #3D5B34 → crema #FFF9EC */
+html,body{overflow-x:clip}
+.bm{--brand:#000;--am:#FBCA3F;--crema:#FFF9EC;--blanco:#fff;--off:#FFFDF6;--dis:rgba(0,0,0,.5);
+  font-family:"Avenir Next LT Pro","Avenir Next",Avenir,Figtree,"Segoe UI",Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.5;color:var(--brand);
+  -webkit-font-smoothing:antialiased;text-align:left;width:100vw;margin-left:calc(50% - 50vw)}
+.bm[hidden],.bm [hidden]{display:none!important}
+.bm *,.bm *::before,.bm *::after{box-sizing:border-box}
+.bm p,.bm h1,.bm h2{margin:0;padding:0;font-family:inherit;color:inherit;text-transform:none}
+.bm a{color:inherit;text-decoration:none}
+.bm img{max-width:100%}
+
+/* Barra superior (Seed: «25% off: Find the right products for you →») */
+.bm .bm-banner{display:flex;justify-content:center;align-items:center;min-height:40px;padding:8px 16px;background:var(--am);color:var(--brand);font-size:14px;font-weight:500;line-height:1.4;letter-spacing:-.14px;text-align:center}
+.bm-banner:hover span{text-decoration:underline}
+
+.bm-main{background:var(--am);overflow:hidden}
+
+/* Portada: foto, degradado y título abajo a la izquierda */
+.bm-hero{position:relative;width:100%;height:285px;overflow:hidden;display:flex;justify-content:center}
+.bm-hero-img{position:absolute;inset:0;background:#3a3a2c url("imagenes_para_subir_a_medios/black-mason-portada.webp") center 30%/cover no-repeat;border-radius:0 0 32px 32px}
+.bm-hero-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(rgba(0,0,0,.1) 0%,rgba(0,0,0,.5) 100%);border-radius:0 0 32px 32px}
+.bm-hero-in{position:relative;z-index:2;display:flex;align-items:flex-end;padding:0 0 32px 16px;max-width:1344px;width:100%;height:100%}
+.bm .bm-hero-t{font-size:32px;font-weight:700;line-height:110%;letter-spacing:-.64px;color:#fff}
+
+/* Fila del destacado + tarjeta con foto */
+.bm-parent{margin:16px 16px 24px;display:flex;justify-content:center}
+.bm-parent-body{display:flex;justify-content:center;flex-direction:column;width:100%;max-width:620px}
+.bm-feat{position:relative;display:flex;flex-direction:column;height:100%;border-radius:32px;background:var(--crema);padding:16px 16px 132px}
+.bm-feat-pill{position:absolute;top:0;margin-top:16px;border-radius:16px;padding:4px 8px;width:fit-content;font-size:12px;font-weight:600;line-height:140%;background:var(--am);color:var(--brand)}
+.bm .bm-feat-img{object-fit:contain;margin:32px auto 0;position:relative;height:320px;width:auto}
+.bm-feat-body{display:flex;flex-direction:column;justify-content:center;color:var(--brand)}
+.bm-feat-inner{display:flex;width:100%;justify-content:space-between;align-items:center;margin-bottom:24px}
+.bm-feat-code{border-radius:999px;border:1.5px solid var(--brand);width:fit-content;padding:0 8px;margin-bottom:8px;font-size:15px;font-weight:500}
+.bm-feat-name{font-size:24px;font-weight:700;line-height:120%;letter-spacing:-.64px}
+.bm-feat-desc{font-size:16px;font-weight:400;line-height:140%;letter-spacing:-.16px}
+.bm-feat-price{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding-top:24px;font-size:20px;line-height:130%;letter-spacing:-.2px}
+.bm-feat-sale{background:var(--brand);color:var(--am);border-radius:999px;padding:4px 10px;font-size:14px;font-weight:700;line-height:1.2}
+.bm-feat-price .bm-ahora{font-weight:700}
+.bm-feat-price .bm-antes{color:var(--dis);font-weight:400}
+.bm-feat-cta{display:flex;align-items:center;padding:24px 0;justify-content:space-between}
+.bm .bm-feat-learn{display:flex;align-items:center;justify-content:center;padding:16px 24px;border-radius:100px;width:180px;color:#fff;background:var(--brand);font-weight:500;line-height:1}
+.bm .bm-feat-atc{background:none;border:0;border-bottom:1px solid;border-radius:0;padding:0 0 4px;margin-left:16px;font:inherit;font-weight:600;line-height:1;color:inherit;cursor:pointer;width:fit-content}
+.bm-quiz{margin-top:-108px;padding:0 16px;position:relative}
+.bm-quiz-body{display:flex;justify-content:space-around;align-items:center;width:100%;height:92px;border-radius:16px;background:var(--brand);padding:8px}
+.bm-quiz-text{padding:8px;border-radius:16px;background:var(--brand);color:#fff;font-size:15px;line-height:1.35}
+.bm .bm-quiz-link{color:#fff;font-weight:600;line-height:140%;letter-spacing:-.16px;text-decoration:underline}
+
+/* Hoja blanca con la grilla */
+.bm-products{background:var(--blanco);border-radius:32px;margin:0 auto;display:flow-root}
+.bm-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:0 auto 24px;height:fit-content;padding:16px;max-width:1440px}
+.bm-grid>*{width:100%;height:auto;min-width:0}
+.bm-card{display:flex;height:375px;padding:16px;gap:16px;align-items:center;flex:1 1 0;border-radius:16px;background:var(--bm-pastel,var(--crema));flex-direction:row;color:inherit}
+.bm-card-img{position:relative;display:flex;align-items:center;justify-content:center;width:100%;height:100%;border-radius:16px;overflow:hidden;flex:1 0 35%}
+.bm-label{position:absolute;z-index:1;top:1px;left:1px;display:inline-flex;justify-content:center;align-items:center;border-radius:999px;padding:.5em .667em;font-size:12px;font-weight:700;line-height:100%;background:var(--brand);color:var(--am)}
+.bm-card-imgw{position:relative;width:100%;height:250px;display:flex;align-items:center;justify-content:center}
+.bm-card-imgw-full{height:100%}
+.bm .bm-card-imgw img{max-height:100%;max-width:100%;width:auto;height:auto;object-fit:contain}
+.bm .bm-duo .bm-card-imgw img{max-width:50%;max-height:72%}
+.bm img.bm-web{background:#fff;border-radius:14px;padding:4px}
+.bm-card-txt{display:flex;flex-direction:column;gap:24px;flex:1 1 60%;height:auto;min-height:0;width:100%;padding:16px 2rem 16px 0}
+.bm-card-info{display:flex;flex-direction:column;gap:16px;flex:1 1 0%}
+.bm-card-head{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.bm-pill{display:inline-flex;align-items:center;border:1.25px solid var(--brand);border-radius:999px;width:fit-content;height:20px;font-size:12px;font-weight:500;letter-spacing:-.24px;padding:3px 6px;line-height:100%;white-space:nowrap}
+.bm .bm-card-name{font-size:24px;font-weight:700;line-height:1.2;letter-spacing:-.36px}
+.bm .bm-card-desc{font-size:16px;font-weight:400;line-height:1.4;letter-spacing:-.16px}
+.bm-card-price{display:flex;flex-direction:column;gap:8px;margin-top:auto}
+.bm-card-save{display:flex;justify-content:flex-start}
+.bm-save{display:inline-flex;justify-content:center;align-items:center;border-radius:999px;padding:.5em .667em;font-size:12px;font-weight:600;line-height:100%;background:var(--am);color:var(--brand)}
+.bm-card-pricerow{display:flex;align-items:center;gap:8px}
+.bm .bm-card-pricerow .bm-ahora{font-size:20px;font-weight:700;line-height:1.3;letter-spacing:-.2px}
+.bm .bm-card-pricerow .bm-antes{font-size:20px;font-weight:400;line-height:1.3;letter-spacing:-.2px;text-decoration:line-through;color:var(--dis)}
+.bm-card-acc{display:flex;align-items:center;gap:24px;align-self:stretch;justify-content:flex-start}
+.bm .bm-learn{display:inline-flex;justify-content:center;align-items:center;border-radius:999px;background:var(--brand);color:#fff;padding:16px 24px;font-size:16px;font-weight:500;line-height:normal;letter-spacing:-.04px;white-space:nowrap;min-width:150px}
+.bm .bm-atc{position:relative;display:inline-flex;justify-content:center;align-items:center;gap:8px;height:48px;background:none;border:0;padding:0;font-family:inherit;font-size:16px;font-weight:600;letter-spacing:-.04px;color:var(--brand);cursor:pointer;white-space:nowrap}
+.bm .bm-atc::after{content:"";background:currentColor;position:absolute;height:1px;width:100%;left:50%;transform:translateX(-50%);bottom:calc(50% - .8em)}
+.bm .bm-btn[disabled]{opacity:.5;cursor:not-allowed}
+.bm .bm-btn.bm-hecho{color:#2E7D32}
+.bm .bm-btn:focus-visible,.bm .bm-learn:focus-visible,.bm .bm-todos:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+
+/* Agregado para Black Mason (no está en Seed): todos los productos, pedido de Víctor 18/11 */
+.bm .bm-todos{display:block;width:min(420px,calc(100% - 32px));margin:8px auto 0;background:var(--brand);color:#fff;border:0;border-radius:999px;padding:18px 24px;font-family:inherit;font-weight:600;font-size:16px;letter-spacing:.3px;cursor:pointer;line-height:1}
+.bm .bm-t{font-size:32px;font-weight:700;line-height:1.1;letter-spacing:-.36px;max-width:1440px;margin:40px auto 0;padding:0 16px}
+.bm .bm-legal{max-width:1440px;margin:32px auto 0;padding:0 16px 32px;font-size:11px;line-height:1.4;color:#333}
+.bm-oculto{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bm .bm-oculta{display:none!important}
+
+/* Mismos cortes que Seed */
+@media (min-width:30em){.bm .bm-banner{padding:8px 56px}}
+@media (min-width:60em){
+  .bm-hero{height:325px}
+  .bm-hero-in{padding:0 0 56px 32px}
+  .bm .bm-hero-t{font-size:48px;letter-spacing:-.96px}
+  .bm-parent-body{height:400px;max-width:1404px;flex-direction:row}
+  .bm-feat{flex-direction:row;margin-right:16px;width:100%;max-width:900px;min-width:662px;padding:16px 16px 0}
+  .bm .bm-feat-img{max-width:350px;margin:32px 0 0}
+  .bm-feat-name{font-size:32px;line-height:110%;letter-spacing:-.36px}
+  .bm-feat-cta{justify-content:start;padding-top:24px;padding-bottom:0}
+  .bm .bm-feat-learn{width:200px}
+  .bm .bm-feat-atc{margin-left:24px}
+  .bm-quiz{margin-top:0;padding:0;min-width:300px}
+  .bm .bm-quiz-link{color:var(--brand)}
+  .bm-quiz-body{max-width:360px;height:100%;background:#d9c9c4 url("imagenes_para_subir_a_medios/black-mason-lateral.webp") center/cover no-repeat;border-radius:32px;padding:16px;margin:0;justify-content:center;align-items:flex-end}
+  .bm-quiz-text{color:var(--brand);border-radius:16px;background:rgba(255,255,255,.6);-webkit-backdrop-filter:blur(19px);backdrop-filter:blur(19px);padding:16px}
+}
+@media (min-width:80em){
+  .bm-parent-body{height:450px}
+  .bm-feat{max-width:1050px}
+  .bm .bm-feat-img{margin-top:48px;max-width:400px}
+  .bm-quiz{min-width:340px}
+}
+@media (min-width:1025px){.bm-card-img{flex-basis:50%}}
+@media (min-width:1025px) and (max-width:1200px){.bm-card{height:auto;min-height:375px}}
+@media (max-width:1024px){
+  .bm-grid{grid-template-columns:1fr}
+  .bm-card{flex-direction:row;height:auto;min-height:200px}
+  .bm-card-acc{gap:16px}
+}
+@media (max-width:1024px) and (min-width:500px){.bm-grid,.bm .bm-t,.bm .bm-legal{max-width:665px}}
+@media (max-width:1024px) and (min-width:769px){.bm-card{min-height:360px}}
+@media (min-width:771px) and (max-width:1024px){.bm-card-imgw{max-height:200px}}
+@media (max-width:770px){
+  .bm-card-txt{gap:8px;padding:0}
+  .bm-card-head{gap:4px}
+  .bm-card-info{gap:8px}
+  .bm .bm-atc{height:16px;font-size:14px}
+  .bm .bm-learn{font-size:14px;font-weight:500;line-height:1;padding:14px 18px;min-width:0}
+  .bm-card-imgw{max-height:130px}
+  .bm-card-imgw-full{max-height:none}
+  .bm-pill{font-size:10px;letter-spacing:-.2px;padding:5px;height:17px}
+  .bm .bm-card-name{font-size:18px}
+  .bm .bm-card-desc{font-size:14px;letter-spacing:-.07px}
+  .bm .bm-card-pricerow .bm-antes{font-size:16px}
+  .bm .bm-card-pricerow .bm-ahora{font-size:18px}
+}
+@media (min-width:481px) and (max-width:770px){.bm-card{min-height:clamp(245px,35vw,320px)}}
+@media (max-width:29.9375em){.bm-card{min-height:245px}}
+@media (max-width:400px){.bm-card-img{flex-basis:30%}}
+@media (max-width:59.99em){.bm-hero-t br{display:none}.bm-hero-in{padding-right:16px}}
+@media (max-width:770px){.bm-card-txt{min-width:0}.bm-card-acc{flex-wrap:wrap;gap:10px 16px}.bm .bm-card-name{overflow-wrap:anywhere}}
+</style>
+<div class="bm" id="black-mason" data-inicio="2026-11-27T08:00:00-05:00" data-fin="2026-12-01T07:45:00-05:00">
+ <a class="bm-banner" href="#bm-resto"><span>Black Mason, 27 al 30 de noviembre: delivery gratis desde S/&nbsp;100 y pastillero desde S/&nbsp;200 →</span></a>
+ <div class="bm-main">
+  <div class="bm-hero">
+   <div class="bm-hero-img"></div><div class="bm-hero-ov"></div>
+   <div class="bm-hero-in"><h1 class="bm-hero-t">Black Mason: hasta 40&nbsp;% de descuento<br>en más de 50 productos</h1></div>
+  </div>
+  <div class="bm-parent"><div class="bm-parent-body">
+   <div class="bm-feat bm-p" data-id="500" data-black="6590">
+    <div class="bm-feat-pill">Más pedido</div>
+    <img class="bm-feat-img" src="imagenes_para_subir_a_medios/black-mason-1000038.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Fish-Oil-1.jpg" alt="Omega-3 Fish Oil 1000 mg, 60 cápsulas blandas" width="400" height="320" loading="eager" decoding="async">
+    <div class="bm-feat-body">
+     <div class="bm-feat-inner"><div><div class="bm-feat-code">60 cápsulas blandas</div><div class="bm-feat-name">Omega-3 Fish Oil 1000 mg</div></div></div>
+     <div class="bm-feat-desc">Aceite de pescado que ayuda a mantener la salud cardiovascular.</div>
+     <div class="bm-feat-price bm-precio"><span class="bm-feat-sale">−14&nbsp;%</span><span class="bm-ahora">S/&nbsp;65,90</span><s class="bm-antes">S/&nbsp;76,90</s></div>
+     <div class="bm-feat-cta"><a class="bm-feat-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/omega-3-fish-oil-1000-mg/">Ver producto</a><button class="bm-btn bm-feat-atc" type="button">Agregar al carrito</button></div>
+    </div>
+   </div>
+   <div class="bm-quiz"><div class="bm-quiz-body"><div class="bm-quiz-text">¿Tu compra llega a S/&nbsp;200? El pastillero va de regalo.<br><a class="bm-quiz-link bm-ir-todos" href="#bm-resto">Ver todos los productos</a></div></div></div>
+  </div></div>
+  <div class="bm-products">
+   <div class="bm-grid">
+<div class="bm-card bm-p" data-id="100965" data-black="9090" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−9&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/magnesium-glycinate-plus-60-cap/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000101.webp" data-web="https://masonnatural.pe/wp-content/uploads/2025/08/Glicinato-de-magnesio-1.jpg" alt="Glicinato de Magnesio Plus, 60 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/magnesium-glycinate-plus-60-cap/">Glicinato de Magnesio Plus</a></p></div>
+   <p class="bm-card-desc">Ayuda a mantener la función muscular adecuada.</p>
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;90,90</p><p class="bm-antes">S/&nbsp;99,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/magnesium-glycinate-plus-60-cap/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p bm-duo" data-ids="500,100965" data-black="15680" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><div class="bm-card-imgw bm-card-imgw-full"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000038.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Fish-Oil-1.jpg" alt="Omega-3 Fish Oil 1000 mg, 60 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000101.webp" data-web="https://masonnatural.pe/wp-content/uploads/2025/08/Glicinato-de-magnesio-1.jpg" alt="Glicinato de Magnesio Plus, 60 cápsulas" width="200" height="300" loading="eager" decoding="async"></div></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><p class="bm-card-name">Dúo Omega-3 + Glicinato</p></div>
+   <p class="bm-card-desc">El par que más se compra junto en nuestra web, con delivery gratis en Lima.</p>
+  </div>
+  <div class="bm-card-price"><div class="bm-card-save"><span class="bm-save">Dúo + ahorras S/&nbsp;20,00</span></div>
+   <div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;156,80</p><p class="bm-antes">S/&nbsp;176,80</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/omega-3-fish-oil-1000-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar los dos</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="100966" data-black="6790" style="--bm-pastel:#FBD7BF">
+ <div class="bm-card-img"><span class="bm-label">−9&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/k2-d3-60-tab/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000097.webp" data-web="https://masonnatural.pe/wp-content/uploads/2025/08/K2D3-1.jpg" alt="K2 + D3, 60 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/k2-d3-60-tab/">K2 + D3</a></p></div>
+   <p class="bm-card-desc">La vitamina D ayuda a formar huesos y dientes fuertes.</p>
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;67,90</p><p class="bm-antes">S/&nbsp;74,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/k2-d3-60-tab/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="490" data-black="5690" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−10&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/defensas/zinc-30-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000065.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Zinc-1.jpg" alt="Zinc 30 mg, 100 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/defensas/zinc-30-mg/">Zinc 30 mg</a></p></div>
+   <p class="bm-card-desc">Contribuye a mantener huesos, piel, cabello y uñas saludables.</p>
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;56,90</p><p class="bm-antes">S/&nbsp;63,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/defensas/zinc-30-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="480" data-black="5690" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−10&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/defensas/pure-c-1000-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000056.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Vitamina-C-1000-1.jpg" alt="Vitamina C 1000 mg, 100 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/defensas/pure-c-1000-mg/">Vitamina C 1000 mg</a></p></div>
+   <p class="bm-card-desc">Ayuda a mantener la función inmunológica.</p>
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;56,90</p><p class="bm-antes">S/&nbsp;63,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/defensas/pure-c-1000-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="526" data-black="4590" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−16&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/complejo-b/stress-formula-with-zinc/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000048.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Stress-B-Complex-1.jpg" alt="Stress B-Complex con Antioxidantes + Zinc, 60 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/complejo-b/stress-formula-with-zinc/">Stress B-Complex con Antioxidantes + Zinc</a></p></div>
+   <p class="bm-card-desc">Vitaminas del complejo B que contribuyen a disminuir el cansancio.</p>
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;45,90</p><p class="bm-antes">S/&nbsp;54,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/complejo-b/stress-formula-with-zinc/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+   </div>
+   <button class="bm-todos" type="button" aria-expanded="false" aria-controls="bm-resto">VER TODOS LOS PRODUCTOS</button>
+   <div id="bm-resto" hidden><h2 class="bm-t">Todos los productos Black Mason</h2>
+    <div class="bm-grid">
+<div class="bm-card bm-p" data-id="562" data-black="11490" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−17&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/articulaciones/glucosamina-condroitina-advanced/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000022.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Glucosamina-Advanced-1.jpg" alt="Glucosamina Advanced, 60 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/articulaciones/glucosamina-condroitina-advanced/">Glucosamina Advanced</a></p></div>
+   <p class="bm-card-desc">Glucosamina, colágeno hidrolizado y ácido hialurónico en una sola fórmula.</p>
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;114,90</p><p class="bm-antes">S/&nbsp;139,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/articulaciones/glucosamina-condroitina-advanced/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="88668" data-black="7390" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−9&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/multivitaminico/vitatrum-multivitaminico-multimineral-130-tab-mason-natural/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000078.webp" data-web="https://masonnatural.pe/wp-content/uploads/2024/08/Vitatrum-130-1.jpg" alt="Vitatrum Multivitamínico y Multimineral, 130 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">130 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/multivitaminico/vitatrum-multivitaminico-multimineral-130-tab-mason-natural/">Vitatrum Multivitamínico y Multimineral</a></p></div>
+   <p class="bm-card-desc">13 vitaminas y 13 minerales en una fórmula integral.</p>
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;73,90</p><p class="bm-antes">S/&nbsp;81,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/multivitaminico/vitatrum-multivitaminico-multimineral-130-tab-mason-natural/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="2007" data-black="3890" style="--bm-pastel:#F6D3DE">
+ <div class="bm-card-img"><span class="bm-label">−35&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/todos-los-productos/multivitaminico-body-hair/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000005.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/05/Body-Hair-Skin-and-Nails-1.jpg" alt="Body, Hair, Skin &amp; Nails, 60 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/todos-los-productos/multivitaminico-body-hair/">Body, Hair, Skin &amp; Nails</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;38,90</p><p class="bm-antes">S/&nbsp;59,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/todos-los-productos/multivitaminico-body-hair/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="86299" data-black="7290" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−9&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/d3-2000-ui-60-softg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000080.webp" data-web="https://masonnatural.pe/wp-content/uploads/2024/07/D3-2000-1.jpg" alt="D3 2000 UI, 60 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/d3-2000-ui-60-softg/">D3 2000 UI</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;72,90</p><p class="bm-antes">S/&nbsp;80,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/d3-2000-ui-60-softg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="5606" data-black="5190" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−10&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/defensas/selenium-200-mcg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000045.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/07/Selenio-1.jpg" alt="Selenio 200 mcg, 60 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/defensas/selenium-200-mcg/">Selenio 200 mcg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;51,90</p><p class="bm-antes">S/&nbsp;57,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/defensas/selenium-200-mcg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="100964" data-black="4890" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−10&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/ashwagandha-500-mg-30-cap/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000100.webp" data-web="https://masonnatural.pe/wp-content/uploads/2025/08/Ashwagandha-1.jpg" alt="Ashwagandha 500 mg, 30 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">30 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/ashwagandha-500-mg-30-cap/">Ashwagandha 500 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;48,90</p><p class="bm-antes">S/&nbsp;54,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/ashwagandha-500-mg-30-cap/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="464" data-black="9190" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−8&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vitamin-b-12-1000-sublingual/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000054.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/B-12-1000-mcg-1.jpg" alt="B-12 1000 mcg, 100 tabletas sublinguales" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas sublinguales</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vitamin-b-12-1000-sublingual/">B-12 1000 mcg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;91,90</p><p class="bm-antes">S/&nbsp;99,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vitamin-b-12-1000-sublingual/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="20500" data-black="8590" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−13&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vein-erect-with-l-arginine-and-maca/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000052.webp" data-web="https://masonnatural.pe/wp-content/uploads/2021/03/Vein-Erect-1.jpg" alt="Vein Erect con L-Arginina y Maca, 80 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">80 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vein-erect-with-l-arginine-and-maca/">Vein Erect con L-Arginina y Maca</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;85,90</p><p class="bm-antes">S/&nbsp;98,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vein-erect-with-l-arginine-and-maca/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="528" data-black="3990" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−20&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/calcium-magnesium-zinc/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000010.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Calcio-Magnesio-y-Zinc-1.jpg" alt="Calcio, Magnesio y Zinc, 100 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/calcium-magnesium-zinc/">Calcio, Magnesio y Zinc</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;39,90</p><p class="bm-antes">S/&nbsp;49,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/calcium-magnesium-zinc/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="550" data-black="9490" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−13&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/heart-trio-co-q-10-vitamin-e-and-fish-oil/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000025.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/CoQ10-1.jpg" alt="CoQ10 + Vitamina E y Omega-3, 60 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/heart-trio-co-q-10-vitamin-e-and-fish-oil/">CoQ10 + Vitamina E y Omega-3</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;94,90</p><p class="bm-antes">S/&nbsp;109,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/heart-trio-co-q-10-vitamin-e-and-fish-oil/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="518" data-black="8190" style="--bm-pastel:#F6D3DE">
+ <div class="bm-card-img"><span class="bm-label">−13&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/collagen-1500-plus-biotin-vitamin-c/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000012.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Colageno-1500-1.jpg" alt="Colágeno 1500 + Biotina + Vitamina C, 60 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/collagen-1500-plus-biotin-vitamin-c/">Colágeno 1500 + Biotina + Vitamina C</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;81,90</p><p class="bm-antes">S/&nbsp;94,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/collagen-1500-plus-biotin-vitamin-c/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="564" data-black="5390" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−10&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/complejo-b/b-complex-con-electrolitos/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000001.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/B-Complex-1.jpg" alt="Complejo B con Electrolitos, 60 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/complejo-b/b-complex-con-electrolitos/">Complejo B con Electrolitos</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;53,90</p><p class="bm-antes">S/&nbsp;59,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/complejo-b/b-complex-con-electrolitos/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="94295" data-black="8890" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−9&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/todos-los-productos/alpha-lipoic-acid-600-mg-30-cap/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000085.webp" data-web="https://masonnatural.pe/wp-content/uploads/2025/01/Acido-alfa-lipoico-1.jpg" alt="Ácido Alfa Lipoico 600 mg, 30 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">30 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/todos-los-productos/alpha-lipoic-acid-600-mg-30-cap/">Ácido Alfa Lipoico 600 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;88,90</p><p class="bm-antes">S/&nbsp;97,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/todos-los-productos/alpha-lipoic-acid-600-mg-30-cap/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="474" data-black="4590" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−16&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vitamin-b12-250-mcg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000055.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/B-12-250mcg-1.jpg" alt="B-12 250 mcg, 100 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vitamin-b12-250-mcg/">B-12 250 mcg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;45,90</p><p class="bm-antes">S/&nbsp;54,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vitamin-b12-250-mcg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="92308" data-black="5190" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−11&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/d3-1000-iu-25-mcg-60-softg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000081.webp" data-web="https://masonnatural.pe/wp-content/uploads/2024/11/D3-1000-1.jpg" alt="D3 1000 UI, 60 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/d3-1000-iu-25-mcg-60-softg/">D3 1000 UI</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;51,90</p><p class="bm-antes">S/&nbsp;58,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/d3-1000-iu-25-mcg-60-softg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="38822" data-black="5690" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−10&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sueno/melatonin-500-mcg-60-tab/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000069.webp" data-web="https://masonnatural.pe/wp-content/uploads/2022/08/Melatonina-1.jpg" alt="Melatonina 500 mcg, 60 tabletas sublinguales" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 tabletas sublinguales</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/sueno/melatonin-500-mcg-60-tab/">Melatonina 500 mcg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;56,90</p><p class="bm-antes">S/&nbsp;63,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sueno/melatonin-500-mcg-60-tab/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="100960" data-black="5790" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−10&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/digestivo/probiotic-acidophilus-bifidus-30-comp-mast/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000098.webp" data-web="https://masonnatural.pe/wp-content/uploads/2025/08/Probiotic-Acidophilus-1.jpg" alt="Probiótico Acidophilus &amp; Bifidus, 30 tabletas masticables" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">30 tabletas masticables</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/digestivo/probiotic-acidophilus-bifidus-30-comp-mast/">Probiótico Acidophilus &amp; Bifidus</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;57,90</p><p class="bm-antes">S/&nbsp;64,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/digestivo/probiotic-acidophilus-bifidus-30-comp-mast/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="532" data-black="10990" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−8&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/articulaciones/glucosamine-chondroitin-15001200-double-strengh/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000021.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Glucosamina-1500-1.jpg" alt="Glucosamina Condroitina 1500/1200, 60 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/articulaciones/glucosamine-chondroitin-15001200-double-strengh/">Glucosamina Condroitina 1500/1200</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;109,90</p><p class="bm-antes">S/&nbsp;119,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/articulaciones/glucosamine-chondroitin-15001200-double-strengh/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="100963" data-black="8190" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−8&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/magnesium-citrate-60-softg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000099.webp" data-web="https://masonnatural.pe/wp-content/uploads/2025/08/Magnesium-Citrate-1.jpg" alt="Citrato de Magnesio, 60 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/magnesium-citrate-60-softg/">Citrato de Magnesio</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;81,90</p><p class="bm-antes">S/&nbsp;89,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/magnesium-citrate-60-softg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="100962" data-black="6790" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−9&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/neuro-complex-with-alpha-lipoic-acid-60-tab/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000095.webp" data-web="https://masonnatural.pe/wp-content/uploads/2025/08/Neuro-Complex-1.jpg" alt="Neuro Complex con Ácido Alfa Lipoico, 60 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/neuro-complex-with-alpha-lipoic-acid-60-tab/">Neuro Complex con Ácido Alfa Lipoico</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;67,90</p><p class="bm-antes">S/&nbsp;74,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/neuro-complex-with-alpha-lipoic-acid-60-tab/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="476" data-black="3890" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−17&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/pre-natal/folic-acid-800-mcg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000016.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Folic-Acid-1.jpg" alt="Ácido Fólico 800 mcg, 100 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/pre-natal/folic-acid-800-mcg/">Ácido Fólico 800 mcg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;38,90</p><p class="bm-antes">S/&nbsp;46,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/pre-natal/folic-acid-800-mcg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="36089" data-black="9790" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−13&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/biotina-10000-mcg-plus-keratina-100-mg-60-tab/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000067.webp" data-web="https://masonnatural.pe/wp-content/uploads/2022/06/Biotina-10-000-mcg-1.jpg" alt="Biotina 10,000 mcg + Keratina, 60 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/biotina-10000-mcg-plus-keratina-100-mg-60-tab/">Biotina 10,000 mcg + Keratina</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;97,90</p><p class="bm-antes">S/&nbsp;112,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/biotina-10000-mcg-plus-keratina-100-mg-60-tab/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="87755" data-black="8590" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−14&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/todos-los-productos/milk-thistle-silymarin-60-cap/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000075.webp" data-web="https://masonnatural.pe/wp-content/uploads/2024/07/Milk-Thistle-1.jpg" alt="Silimarina (Milk Thistle), 60 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/todos-los-productos/milk-thistle-silymarin-60-cap/">Silimarina (Milk Thistle)</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;85,90</p><p class="bm-antes">S/&nbsp;99,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/todos-los-productos/milk-thistle-silymarin-60-cap/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="502" data-black="11290" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−12&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/prostata/saw-palmetto-160-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000043.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Saw-Palmetto-1.jpg" alt="Saw Palmetto, 60 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/prostata/saw-palmetto-160-mg/">Saw Palmetto</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;112,90</p><p class="bm-antes">S/&nbsp;128,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/prostata/saw-palmetto-160-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="86300" data-black="3590" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−14&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/calcium-600mg-d3-800iu-20-mcg-60-tab/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000082.webp" data-web="https://masonnatural.pe/wp-content/uploads/2024/07/Calcium-600-1.jpg" alt="Calcio 600 mg + D3 800 UI, 60 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/calcium-600mg-d3-800iu-20-mcg-60-tab/">Calcio 600 mg + D3 800 UI</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;35,90</p><p class="bm-antes">S/&nbsp;41,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/calcium-600mg-d3-800iu-20-mcg-60-tab/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="2006" data-black="6090" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−15&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/digestivo/enzimas-digestivas/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000014.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/05/Enzimas-Digestivas-1.jpg" alt="Enzimas Digestivas, 90 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">90 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/digestivo/enzimas-digestivas/">Enzimas Digestivas</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;60,90</p><p class="bm-antes">S/&nbsp;71,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/digestivo/enzimas-digestivas/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="484" data-black="8090" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−13&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/vitamin-e-400-ui-100-softg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000058.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/E400-1.jpg" alt="Vitamina E 400 UI, 100 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/vitamin-e-400-ui-100-softg/">Vitamina E 400 UI</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;80,90</p><p class="bm-antes">S/&nbsp;93,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/vitamin-e-400-ui-100-softg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="538" data-black="3190" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−23&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/vitamin-e-400-ui-30-softg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000059.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/E400-x30-1.jpg" alt="Vitamina E 400 UI, 30 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">30 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/vitamin-e-400-ui-30-softg/">Vitamina E 400 UI</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;31,90</p><p class="bm-antes">S/&nbsp;41,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/vitamin-e-400-ui-30-softg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="514" data-black="5790" style="--bm-pastel:#F6D3DE">
+ <div class="bm-card-img"><span class="bm-label">−14&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/soya-lecithin-1200-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000046.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Lecitina-de-soya-1.jpg" alt="Lecitina de Soya 1200 mg, 100 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/soya-lecithin-1200-mg/">Lecitina de Soya 1200 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;57,90</p><p class="bm-antes">S/&nbsp;67,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/soya-lecithin-1200-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="516" data-black="2690" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−40&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/garlic-oil-500-ajo-en-aceite-500-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000017.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Garlic-Oil-1.jpg" alt="Garlic Oil, 100 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/garlic-oil-500-ajo-en-aceite-500-mg/">Garlic Oil</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;26,90</p><p class="bm-antes">S/&nbsp;45,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/corazon/garlic-oil-500-ajo-en-aceite-500-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="100961" data-black="10990" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−8&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/b-12-3000-mcg-60-tab-subl/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000096.webp" data-web="https://masonnatural.pe/wp-content/uploads/2025/08/B-12-3000mcg-1.jpg" alt="B-12 3000 mcg, 60 tabletas sublinguales" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 tabletas sublinguales</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/b-12-3000-mcg-60-tab-subl/">B-12 3000 mcg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;109,90</p><p class="bm-antes">S/&nbsp;119,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/b-12-3000-mcg-60-tab-subl/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="478" data-black="4590" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−16&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/biotin-800-mcg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000003.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Biotin-800-mcg-1.jpg" alt="Biotina 800 mcg, 60 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/biotin-800-mcg/">Biotina 800 mcg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;45,90</p><p class="bm-antes">S/&nbsp;54,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/biotin-800-mcg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="482" data-black="4290" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−17&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/vitamin-d-400-ui/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000057.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/D3-400-1.jpg" alt="D3 400 UI, 100 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/vitamin-d-400-ui/">D3 400 UI</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;42,90</p><p class="bm-antes">S/&nbsp;51,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/vitamin-d-400-ui/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="488" data-black="5890" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−15&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/vision/lutein-6-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000035.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Lutein-1.jpg" alt="Luteína 6 mg, 60 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/vision/lutein-6-mg/">Luteína 6 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;58,90</p><p class="bm-antes">S/&nbsp;69,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/vision/lutein-6-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="486" data-black="9090" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−9&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/vitamin-e-1000-ui/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000060.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/E-1000-1.jpg" alt="Vitamina E 1000 UI, 50 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">50 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/vitamin-e-1000-ui/">Vitamina E 1000 UI</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;90,90</p><p class="bm-antes">S/&nbsp;99,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/vitamin-e-1000-ui/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="512" data-black="5490" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−11&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/rendimiento-deportivo/magnesium-gluconate-550-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000037.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Gluconato-de-magnesio-1.jpg" alt="Gluconato de Magnesio 550 mg, 100 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/rendimiento-deportivo/magnesium-gluconate-550-mg/">Gluconato de Magnesio 550 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;54,90</p><p class="bm-antes">S/&nbsp;61,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/rendimiento-deportivo/magnesium-gluconate-550-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="468" data-black="4090" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−16&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/vision/vitamina-a-10000-ui/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000053.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Vitamina-A-10-000-UI-1.jpg" alt="Vitamina A 10,000 UI, 100 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/vision/vitamina-a-10000-ui/">Vitamina A 10,000 UI</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;40,90</p><p class="bm-antes">S/&nbsp;48,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/vision/vitamina-a-10000-ui/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="10992" data-black="5090" style="--bm-pastel:#F6D3DE">
+ <div class="bm-card-img"><span class="bm-label">−20&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/tiroides/lecithin-kelp-b6/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000031.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/11/Lecitina-Kelp-1.jpg" alt="Lecitina, Kelp y B6 + Vinagre de Manzana, 100 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/tiroides/lecithin-kelp-b6/">Lecitina, Kelp y B6 + Vinagre de Manzana</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;50,90</p><p class="bm-antes">S/&nbsp;63,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/tiroides/lecithin-kelp-b6/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="84579" data-black="3290" style="--bm-pastel:#FFD0D0">
+ <div class="bm-card-img"><span class="bm-label">−13&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/multivitaminico/vitatrum-multivitamin-multimineral-30-tab/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000079.webp" data-web="https://masonnatural.pe/wp-content/uploads/2024/06/Vitatrum-30-1.jpg" alt="Vitatrum Multivitamínico y Multimineral, 30 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">30 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/multivitaminico/vitatrum-multivitamin-multimineral-30-tab/">Vitatrum Multivitamínico y Multimineral</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;32,90</p><p class="bm-antes">S/&nbsp;37,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/multivitaminico/vitatrum-multivitamin-multimineral-30-tab/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="2004" data-black="4390" style="--bm-pastel:#F6D3DE">
+ <div class="bm-card-img"><span class="bm-label">−30&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/spirulina-500-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000047.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/05/Spirulina-1.jpg" alt="Espirulina 500 mg, 100 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/spirulina-500-mg/">Espirulina 500 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;43,90</p><p class="bm-antes">S/&nbsp;62,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/spirulina-500-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="494" data-black="6090" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−15&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/calcium-citrate-with-vitamin-d3/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000009.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Calcium-Citrate-1-1.jpg" alt="Citrato de Calcio con D3, 60 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/calcium-citrate-with-vitamin-d3/">Citrato de Calcio con D3</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;60,90</p><p class="bm-antes">S/&nbsp;71,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/huesos/calcium-citrate-with-vitamin-d3/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="36857" data-black="2590" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−16&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/digestivo/para-que-sirve-el-ginger/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000070.webp" data-web="https://masonnatural.pe/wp-content/uploads/2022/06/Ginger-1.jpg" alt="Ginger (Kion) 500 mg, 60 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/digestivo/para-que-sirve-el-ginger/">Ginger (Kion) 500 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;25,90</p><p class="bm-antes">S/&nbsp;30,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/digestivo/para-que-sirve-el-ginger/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="506" data-black="4890" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−15&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sueno/valerian-500-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000051.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Valerian-1.jpg" alt="Valeriana 500 mg, 60 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/sueno/valerian-500-mg/">Valeriana 500 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;48,90</p><p class="bm-antes">S/&nbsp;57,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sueno/valerian-500-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="33181" data-black="7490" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−13&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/super-biotina-5000-mcg-copia/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000033.webp" data-web="https://masonnatural.pe/wp-content/uploads/2022/01/Biotina-5-000-mcg-1.jpg" alt="Biotina 5000 mcg, 60 cápsulas blandas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas blandas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/super-biotina-5000-mcg-copia/">Biotina 5000 mcg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;74,90</p><p class="bm-antes">S/&nbsp;86,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/belleza/super-biotina-5000-mcg-copia/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="510" data-black="3690" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−13&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/rendimiento-deportivo/potassium-gluconate-595-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000039.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Gluconato-de-potasio-1.jpg" alt="Gluconato de Potasio 595 mg, 100 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/rendimiento-deportivo/potassium-gluconate-595-mg/">Gluconato de Potasio 595 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;36,90</p><p class="bm-antes">S/&nbsp;42,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/rendimiento-deportivo/potassium-gluconate-595-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="520" data-black="5690" style="--bm-pastel:#C7E6F7">
+ <div class="bm-card-img"><span class="bm-label">−14&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/rendimiento-deportivo/l-arginine-500-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000029.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/L-Arginina-1.jpg" alt="L-Arginina 500 mg, 60 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">60 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/rendimiento-deportivo/l-arginine-500-mg/">L-Arginina 500 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;56,90</p><p class="bm-antes">S/&nbsp;66,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/rendimiento-deportivo/l-arginine-500-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="548" data-black="4890" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−15&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vitamina-b1-100-mg/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000002.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/B-1-mg-1.jpg" alt="Vitamina B1 100 mg, 100 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vitamina-b1-100-mg/">Vitamina B1 100 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;48,90</p><p class="bm-antes">S/&nbsp;57,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/vitamina-b1-100-mg/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="38821" data-black="5390" style="--bm-pastel:#C7E4C0">
+ <div class="bm-card-img"><span class="bm-label">−20&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/b6-100-mg-100-tab/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000066.webp" data-web="https://masonnatural.pe/wp-content/uploads/2022/08/B-6-100-mg-1.jpg" alt="Vitamina B6 100 mg, 100 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/b6-100-mg-100-tab/">Vitamina B6 100 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;53,90</p><p class="bm-antes">S/&nbsp;67,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/sistema-nervioso/b6-100-mg-100-tab/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="36079" data-black="8490" style="--bm-pastel:#F6D3DE">
+ <div class="bm-card-img"><span class="bm-label">−8&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/articulaciones/acido-hialuronico-100-mg-30-cap/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000068.webp" data-web="https://masonnatural.pe/wp-content/uploads/2022/05/Acido-Hialuronico-1.jpg" alt="Ácido Hialurónico 100 mg, 30 cápsulas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">30 cápsulas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/articulaciones/acido-hialuronico-100-mg-30-cap/">Ácido Hialurónico 100 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;84,90</p><p class="bm-antes">S/&nbsp;92,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/articulaciones/acido-hialuronico-100-mg-30-cap/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+<div class="bm-card bm-p" data-id="522" data-black="3690" style="--bm-pastel:#F6D3DE">
+ <div class="bm-card-img"><span class="bm-label">−26&nbsp;%</span><a class="bm-card-imgw" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/brewers-yeast-levadura-de-cerveza/"><img class="" src="imagenes_para_subir_a_medios/black-mason-1000006.webp" data-web="https://masonnatural.pe/wp-content/uploads/2020/04/Levadura-de-cerveza-1.jpg" alt="Levadura de Cerveza 680 mg, 100 tabletas" width="200" height="300" loading="eager" decoding="async"></a></div>
+ <div class="bm-card-txt">
+  <div class="bm-card-info">
+   <div class="bm-card-head"><span class="bm-pill">100 tabletas</span><p class="bm-card-name"><a href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/brewers-yeast-levadura-de-cerveza/">Levadura de Cerveza 680 mg</a></p></div>
+   
+  </div>
+  <div class="bm-card-price"><div class="bm-card-pricerow bm-precio"><p class="bm-ahora">S/&nbsp;36,90</p><p class="bm-antes">S/&nbsp;49,90</p></div></div>
+  <div class="bm-card-acc"><a class="bm-learn" href="https://masonnatural.pe/suplementos-naturales-vitaminas/energia/brewers-yeast-levadura-de-cerveza/">Ver producto</a><button class="bm-btn bm-atc" type="button">Agregar al carrito</button></div>
+ </div>
+</div>
+    </div></div>
+   <p class="bm-legal">Promoción válida del 27/11/2026 al 30/11/2026 o hasta agotar stock (stock mínimo: [N] unidades por producto). Precios válidos en masonnatural.pe. Hasta 40&nbsp;% de descuento: Garlic Oil 100 cápsulas, de S/&nbsp;45,90 a S/&nbsp;26,90. Delivery gratis solo en Lima Metropolitana, compras web desde S/&nbsp;100; no aplica a tiendas propias. Pastillero de regalo en compras desde S/&nbsp;200, hasta agotar stock. No incluye la línea ULTRA ni productos nuevos. Suplementos dietéticos: no deben utilizarse como sustituto de una dieta equilibrada; lee las advertencias de la etiqueta de cada producto. GARLIC OIL. RS: PNE-1684. Advertencias: Consulte a un profesional de la salud antes de tomar este producto, si está embarazada, tiene diabetes o está tomando anticoagulantes o inhibidores de la proteasa. OMEGA-3 FISH OIL 1000 MG. RS: DE-1890. Advertencias: Si está embarazada o en periodo de lactancia consulte a su médico. No tome si está usando anticoagulantes. En caso de sobredosis accidental, descontinúe el uso y busque asistencia médica inmediata. No debe utilizarse como sustituto de una dieta equilibrada. Precauciones: No exceda la dosis diaria recomendada. No hay estudios que aseguren su uso en personas con enfermedad renal o hepática grave. Puede aumentar el riesgo de sangrado si toma junto con aspirina, o producir una disminución de la presión sanguínea. K2 + D3. RS: DE-5515. Advertencias y precauciones: No exceder la dosis diaria recomendada. No debe utilizarse como sustituto de una dieta equilibrada; si está embarazada, en periodo de lactancia, tomando alguna medicación o tiene alguna condición médica, consulte a su médico antes de tomar este producto. B-12 1000 MCG. RS: DE-1972. Advertencias y precauciones: No exceder la dosis diaria recomendada. No debe utilizarse como sustituto de una dieta equilibrada. Si está embarazada, en periodo de lactancia, tomando alguna medicación o tiene alguna condición médica, consulte a su médico antes de usar este producto. Corporación Arion SAC. RUC: 20507410791.</p>
+  </div>
+ </div>
+</div>
+<script>window.BM_PREVIEW=true;
+
+(function(){
+  var raiz=document.getElementById('black-mason'); if(!raiz) return;
+  var previa=window.BM_PREVIEW===true || /[?&]bm-preview=1\b/.test(location.search);
+  var ahora=Date.now(), ini=Date.parse(raiz.dataset.inicio), fin=Date.parse(raiz.dataset.fin);
+  // Víctor (18/11): se implementa cuando Sistemas sube los precios, el 27/11 a las 8:00. Antes y después no se muestra.
+  if(!previa && (ahora<ini || ahora>fin)) return;
+  raiz.hidden=false;
+  var tarjetas=[].slice.call(raiz.querySelectorAll('.bm-p'));
+  function soles(c){return 'S/ '+(c/100).toFixed(2).replace('.',',');}
+
+  // Foto: si el recorte no está en Medios, se usa la foto de la ficha (sin filtros).
+  [].forEach.call(raiz.querySelectorAll('img[data-web]'),function(img){
+    function respaldo(){ if(img.dataset.web && img.src.indexOf(img.dataset.web)<0){ img.classList.add('bm-web'); img.src=img.dataset.web; } }
+    img.addEventListener('error',respaldo);
+    if(img.complete && img.naturalWidth===0) respaldo();
+  });
+
+  // «VER TODOS LOS PRODUCTOS»: muestra el resto en la misma página (con tachado y %), y el botón desaparece.
+  var todos=raiz.querySelector('.bm-todos'), resto=document.getElementById('bm-resto');
+  function abrir(){ resto.hidden=false; todos.setAttribute('aria-expanded','true'); todos.hidden=true;
+    var h=resto.querySelector('.bm-t'); if(h){ h.setAttribute('tabindex','-1'); h.focus({preventScroll:true}); } }
+  todos.addEventListener('click',abrir);
+  var ir=raiz.querySelector('.bm-ir-todos'); if(ir) ir.addEventListener('click',function(ev){ ev.preventDefault(); abrir(); resto.scrollIntoView({behavior:'smooth'}); });
+
+  // Agregar al carrito (un producto o el dúo).
+  function ajaxUrl(){ var p=window.wc_add_to_cart_params; return p&&p.wc_ajax_url?p.wc_ajax_url.replace('%%endpoint%%','add_to_cart'):'/?wc-ajax=add_to_cart'; }
+  function agregarUno(id){
+    var f=new URLSearchParams(); f.append('product_id',id); f.append('quantity','1');
+    return fetch(ajaxUrl(),{method:'POST',body:f,credentials:'same-origin',headers:{'Content-Type':'application/x-www-form-urlencoded'}})
+      .then(function(r){return r.json()}).then(function(d){ if(!d||d.error) throw new Error('no'); return d; });
+  }
+  function agregar(btn, ids){
+    var texto=btn.textContent; btn.disabled=true; btn.textContent='Agregando…';
+    function ok(){ btn.classList.add('bm-hecho'); btn.textContent='Agregado ✓';
+      setTimeout(function(){ btn.disabled=false; btn.classList.remove('bm-hecho'); btn.textContent=texto; },1800); }
+    if(previa){ setTimeout(ok,300); return; }
+    ids.reduce(function(p,id){return p.then(function(){return agregarUno(id)})},Promise.resolve())
+      .then(function(d){ if(window.jQuery){jQuery(document.body).trigger('added_to_cart',[d.fragments,d.cart_hash,jQuery(btn)]);} ok(); })
+      .catch(function(){ btn.disabled=false; btn.textContent='Inténtalo desde la ficha'; setTimeout(function(){btn.textContent=texto;},2500); });
+  }
+  tarjetas.forEach(function(el){ var b=el.querySelector('.bm-btn'); if(!b) return; var ids=(el.dataset.ids||el.dataset.id).split(',');
+    b.addEventListener('click',function(){ agregar(b,ids); }); });
+  if(previa) return;
+
+  // Control de precio: el tachado y el % solo se muestran si la tienda cobra el precio Black.
+  var ids={}; tarjetas.forEach(function(el){ (el.dataset.ids||el.dataset.id).split(',').forEach(function(i){ids[i]=1}); });
+  fetch('/wp-json/wc/store/v1/products?include='+Object.keys(ids).join(',')+'&per_page=100',{credentials:'same-origin',cache:'no-store'})
+   .then(function(r){return r.json()}).then(function(list){
+     var by={}; (list||[]).forEach(function(p){ by[p.id]={precio:parseInt(p.prices.price,10)*Math.pow(10,2-p.prices.currency_minor_unit), stock:p.is_in_stock}; });
+     tarjetas.forEach(function(el){
+       var ps=(el.dataset.ids||el.dataset.id).split(',').map(function(i){return by[i]});
+       if(ps.some(function(p){return !p})) return;
+       var suma=ps.reduce(function(a,p){return a+p.precio},0), b=el.querySelector('.bm-btn');
+       if(suma!==+el.dataset.black){ var bd=el.querySelector('.bm-badge'); if(bd) bd.remove();
+         el.querySelector('.bm-precio').innerHTML='<strong class="bm-ahora">'+soles(suma)+'</strong>'; }
+       if(ps.some(function(p){return !p.stock})){ if(el.dataset.ids){ el.classList.add('bm-oculta'); return; }
+         b.disabled=true; b.textContent='Agotado'; }
+     });
+   }).catch(function(){});
+})();
+</script>
+</body></html>
