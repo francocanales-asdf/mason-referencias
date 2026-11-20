@@ -1,0 +1,167 @@
+/* Mason · mockup de estructura web nueva · v4 (17/11/2026)
+   Paleta del Brandbook 2026: negro #000 y amarillo #FBCA3F; fondos neutros (crema/blanco); amarillo solo como acento (v4).
+   Tipografía: Avenir Next (Víctor 13/11: se puede usar). Pesos livianos (Víctor 12/11: nada bold ni tosco). */
+:root{--am:#FBCA3F;--am2:#FEF4D6;--tx:#1A1A1A;--su:#6A6A6A;--li:#E6E3DA;--gr:#F5F3EE;--cr:#FFFDF7;
+/* v4 (Víctor 17/11: «no abusen de los colores secundarios»): los fondos pastel pasan a los neutros de la marca */
+--rojo:#F3EFE6;--rojoi:#D95455;--cel:#F3EFE6;--celi:#C9C2B3;--rosa:#F3EFE6;--rosai:#C9C2B3;
+--nar:#F3EFE6;--nari:#C9C2B3;--ver:#F3EFE6;--veri:#C9C2B3;--lav:#F3EFE6;--lavi:#C9C2B3}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff}
+body{font-family:"Avenir Next","Avenir Next LT Pro",Avenir,"Helvetica Neue",Arial,sans-serif;color:var(--tx);font-size:16px;line-height:1.45;font-weight:400}
+img{display:block;max-width:100%}
+b,strong{font-weight:600}
+.w{width:1440px}.m{width:390px}
+.in{padding-left:64px;padding-right:64px}.m .in{padding-left:16px;padding-right:16px}
+h1{font-weight:400;letter-spacing:-.015em;margin:0}
+h2{font-size:36px;font-weight:400;letter-spacing:-.01em;margin:0 0 22px}
+.m h2{font-size:24px;margin-bottom:14px}
+h3{font-weight:500;margin:0}
+h4{font-weight:600;margin:0 0 10px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--su)}
+
+/* ---------- bloques y rótulos ---------- */
+.b{position:relative;outline:2px dashed #C9C6BC;outline-offset:-1px}
+.sec{padding-top:18px;padding-bottom:56px}.m .sec{padding-top:12px;padding-bottom:34px}
+.n{display:inline-flex;gap:6px;align-items:center;flex-wrap:wrap;max-width:100%;background:#fff;color:#000;border:1.4px solid #000;
+ border-radius:6px;padding:3px 8px;font-size:12.5px;line-height:1.3;box-shadow:0 2px 0 #000;margin:0 0 18px;font-weight:400}
+.m .n{font-size:10.5px;padding:2px 6px;gap:4px;margin-bottom:12px}
+.n b{font-weight:700}
+.n i{font-style:normal;color:#444}
+.st{font-size:10.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 6px;border-radius:4px}
+.m .st{font-size:9px;padding:1px 4px}
+.st.ac{background:var(--am)}
+.st.co{background:#fff;border:1.4px dashed #C99A12}
+.st.pr{background:#fff;border:1.4px solid #1A1A1A}
+.st.v3{background:#EDE9DF;border:1.4px solid #C9C2B3}
+.st.v4{background:#1A1A1A;color:#fff}
+.ej{background:#FFF6D8;border:1px dashed #C99A12;border-radius:4px;padding:0 4px}
+.ph{background:repeating-linear-gradient(135deg,#ECEAE4 0 12px,#F6F5F1 12px 24px);display:flex;align-items:center;justify-content:center;
+ color:#6A6A6A;font-size:14px;text-align:center;border-radius:12px;padding:10px}
+.m .ph{font-size:11.5px}
+.lin{height:9px;background:#E8E6E0;border-radius:5px;margin:7px 0}
+.pg-t{padding:26px 64px 18px;background:#fff;border-bottom:1px solid var(--li)}
+.m .pg-t{padding:16px 16px 12px}
+.pg-t h1{font-size:30px;font-weight:500}.m .pg-t h1{font-size:19px}
+.pg-t p{margin:6px 0 0;color:#555;font-size:15px;max-width:1100px}.m .pg-t p{font-size:12px}
+
+/* ---------- botones ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font-weight:500;font-size:15px;border:1.4px solid #1A1A1A;background:#fff;color:#1A1A1A;white-space:nowrap}
+.btn.am{background:var(--am);border-color:var(--am)}
+.btn.ne{background:#1A1A1A;color:#fff}
+.btn.sm{padding:8px 14px;font-size:13px}
+.m .btn{padding:10px 16px;font-size:13px}
+.chip{display:inline-flex;align-items:center;border-radius:999px;padding:8px 16px;font-size:14px;border:1.2px solid #CFCBC0;background:#fff;white-space:nowrap}
+.chip.on{background:#1A1A1A;color:#fff;border-color:#1A1A1A}
+.m .chip{padding:6px 12px;font-size:12px}
+.atp{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:10px 20px;font-weight:500;font-size:15px;color:#1A1A1A;
+ border:1.6px solid transparent;background:linear-gradient(#F5F1EA,#F5F1EA) padding-box,linear-gradient(90deg,#FBCA3F,#F19A61,#E89BB5) border-box;white-space:nowrap}
+.m .atp{padding:7px 13px;font-size:12.5px}
+.atp svg{width:18px;height:18px;fill:none;stroke:#1A1A1A;stroke-width:1.6}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--gr);border-radius:4px;padding:2px 7px}
+
+/* ---------- cintillo y encabezado ---------- */
+.cin{background:var(--am);height:38px;display:flex;align-items:center;justify-content:center;gap:26px;font-size:13px;font-weight:500;letter-spacing:.01em}
+.m .cin{height:34px;font-size:10.5px;gap:8px;padding:0 8px;text-align:center}
+.cin .ar{opacity:.6;font-size:15px}
+.cab{background:var(--cr);color:var(--tx);height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #EFEBE2}
+.m .cab{height:58px}
+.logo{height:28px}.m .logo{height:20px}
+.menu{display:flex;gap:44px;font-size:17px;font-weight:500}
+.menu .on{border-bottom:2px solid var(--tx);padding-bottom:3px}
+.ico{display:flex;gap:20px;align-items:center}
+.ico svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.6}
+.m .ico{gap:14px}.m .ico svg{width:21px;height:21px}
+.cnt{position:relative}.cnt i{position:absolute;right:-7px;top:-6px;background:var(--am);border-radius:999px;font-style:normal;font-size:10px;font-weight:600;padding:0 5px;line-height:15px}
+
+/* ---------- portada ---------- */
+.ban{position:relative;height:600px;overflow:hidden;display:flex;align-items:center}
+.ban .t{position:relative;z-index:2;padding-left:96px;max-width:660px}
+.ban h1{font-size:66px;line-height:1.03;font-weight:300;margin:0 0 18px}
+.ban h1 b{font-weight:400;display:block}
+.ban p{font-size:20px;color:#444;margin:0 0 28px;max-width:470px}
+.ban .k{font-size:13px;letter-spacing:.14em;font-weight:500;color:#6A6A6A;margin-bottom:14px}
+.ban .f{position:absolute;right:70px;bottom:0;top:0;display:flex;align-items:flex-end}
+.ban .f img{filter:drop-shadow(0 22px 26px rgba(0,0,0,.16))}
+.m .ban{height:auto;display:block}
+.m .ban .t{padding:20px 16px 28px}
+.m .ban h1{font-size:36px}.m .ban p{font-size:15px;margin-bottom:18px}
+.m .ban .f{position:relative;right:auto;height:250px;justify-content:center;padding-top:14px;overflow:hidden}
+.obj{border-radius:16px;height:210px;padding:18px 20px;position:relative;overflow:hidden;font-weight:500;font-size:21px}
+.obj img{position:absolute;right:16px;bottom:10px;height:165px;filter:drop-shadow(0 10px 12px rgba(0,0,0,.12))}
+.obj small{display:block;font-size:12px;font-weight:400;color:#555;margin-top:2px}
+.m .obj{height:178px;font-size:15px;padding:12px}
+.m .obj img{height:96px;right:8px;bottom:6px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.g2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.g5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.m .g4,.m .g5{grid-template-columns:repeat(2,1fr);gap:10px}
+.m .g3{grid-template-columns:1fr;gap:12px}
+.m .g2{gap:10px}
+.m .g2.st1{grid-template-columns:1fr}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.dup{background:#fff;border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:10px;border:1px solid var(--li)}
+.dup .ims{display:flex;align-items:flex-end;justify-content:center;gap:4px;background:var(--gr);border-radius:14px;height:200px;padding-bottom:12px}
+.dup .ims img{height:160px}
+.dup .ims b{font-size:26px;font-weight:300;margin:0 4px 64px}
+.dup h3{font-size:19px}
+.dup .cl{font-size:14.5px;color:#333}
+.m .dup .ims{height:150px}.m .dup .ims img{height:118px}
+.club{display:grid;grid-template-columns:1fr 1fr;background:var(--am2)}
+.m .club{grid-template-columns:1fr}
+
+/* ---------- tarjetas producto ---------- */
+.pc{background:#fff;border:1px solid var(--li);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:5px}
+.pc .im{background:#fff;border-radius:12px;height:230px;display:flex;align-items:center;justify-content:center;border:1px solid #F0EEE8}
+.pc .im img{height:200px}
+.m .pc{padding:10px}
+.m .pc .im{height:150px}.m .pc .im img{height:128px}
+.pc .nm{font-weight:500;font-size:16px}
+.m .pc .nm{font-size:13.5px}
+.pc .ds{font-size:13px;color:var(--su)}
+.m .pc .ds{font-size:11.5px}
+.pc .add{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:4px}
+.pc .pr2{font-weight:500}
+.pc .an{font-size:12px;color:#999;text-decoration:line-through;margin-left:6px}
+.plus{width:36px;height:36px;border-radius:50%;background:#1A1A1A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:300}
+.m .plus{width:30px;height:30px;font-size:17px}
+
+/* ---------- pie de página (claro: sin fondos negros) ---------- */
+.foot{background:#F3EFE6;color:var(--tx);padding:30px 64px 26px;font-size:14px}
+.foot .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.1fr 1.2fr;gap:28px}
+.foot h4{color:var(--tx);font-weight:600}
+.foot p{margin:0 0 7px;color:#444}
+.m .foot{padding:18px 16px 22px;font-size:13px}
+.acc{border-bottom:1px solid #DDD7CA;padding:11px 0}
+.acc .h{display:flex;justify-content:space-between;font-weight:500}
+
+/* ---------- chat flotante ---------- */
+.flo{display:flex;gap:10px;align-items:center}
+.flo .c{white-space:nowrap;background:#fff;border:1.4px solid #1A1A1A;border-radius:999px;padding:10px 16px;font-weight:500;font-size:14px;display:flex;gap:8px;align-items:center;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.flo .g{width:50px;height:50px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:12px}
+.m .flo .c{padding:8px 12px;font-size:12px}.m .flo .g{width:42px;height:42px;font-size:11px}
+
+/* ---------- formularios ---------- */
+.inp{border:1.2px solid #CFCBC0;border-radius:10px;padding:12px 14px;color:#888;font-size:15px;background:#fff}
+.m .inp{padding:10px 12px;font-size:13px}
+.lab{font-size:12.5px;color:#555;margin:10px 0 4px}
+.m .lab{font-size:11px}
+.opt{border:1.2px solid #CFCBC0;border-radius:12px;padding:13px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fff}
+.opt.on{border:1.8px solid #1A1A1A}
+.m .opt{padding:10px 12px;font-size:13px}
+.bar{height:8px;border-radius:4px;background:#EDE9DF;overflow:hidden}.bar i{display:block;height:100%;background:var(--am)}
+.ovl{position:relative;overflow:hidden}
+.ovl .dim{position:absolute;inset:0;background:rgba(40,36,30,.42)}
+.fold{position:absolute;left:0;right:0;border-top:2px dashed #D95455;z-index:30}
+.fold span{position:absolute;right:6px;top:-20px;background:#D95455;color:#fff;font-size:10.5px;padding:1px 6px;border-radius:4px}
+.mt8{margin-top:8px}.mt16{margin-top:16px}.mt24{margin-top:24px}.mt32{margin-top:32px}
+.c{text-align:center}.mu{color:var(--su)}.sm{font-size:13px}.m .sm{font-size:11.5px}
+/* v3 QA 17/11: lo que abre encima (pop-up, menú, carrito) va por delante del banner */
+.ovl .dim{z-index:20}
+.ovl .dim ~ div{z-index:21}
+
+/* v4: banner con frasco grande (referencia Seed) y banner con persona (referencia del mockup de Mason) */
+.ban.gr .f{right:110px}
+.ban.gr .f img{filter:drop-shadow(0 30px 34px rgba(0,0,0,.18))}
+.ban .fp{position:absolute;right:0;top:0;bottom:0;width:58%;display:flex;align-items:center;justify-content:center;border-radius:0;font-size:17px;line-height:1.5}
+.m .ban .fp{position:relative;width:auto;height:300px;margin:0 16px 16px;border-radius:12px;font-size:12.5px}
+.m .ban.gr .f{height:330px;right:auto}
