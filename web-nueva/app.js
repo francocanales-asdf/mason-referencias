@@ -139,6 +139,9 @@
       const T = { 'todos': ['Todos los productos', 'Vitaminas y suplementos Mason Natural, con la dosis y lo que dura cada frasco.'], 'mas-vendidos': ['Más vendidos', 'Ordenados por pedidos en la tienda online en 2026.'], 'nuevos': ['Línea Ultra', 'Nuestros productos más nuevos.'] };
       const tt = o ? [o[1], `Productos para ${o[1].toLowerCase()}.`] : (T[h] || T.todos);
       tit.textContent = tt[0]; sub.textContent = `${tt[1]} ${vis} productos.`; cr.textContent = tt[0];
+      const bk = o ? o[0] : (T[h] ? h : 'todos'), bi = $('#lban');
+      if (bi && window.BAN && BAN[bk]) { bi.src = `img/c/${bk}.webp`; bi.alt = tt[0];
+        $('#lcred').innerHTML = `Foto: <a href="${BAN[bk][1]}" target="_blank" rel="noopener">${BAN[bk][0].replace(/^@\s*/, '')} · Pexels</a>` }
       if (h === 'mas-vendidos') sel.value = 'ped'; sort();
     }
     function sort() { const k = sel.value; cards.slice().sort((a, b) => k === 'asc' ? a.dataset.p - b.dataset.p : k === 'desc' ? b.dataset.p - a.dataset.p : b.dataset.ped - a.dataset.ped).forEach(c => lst.appendChild(c)) }
