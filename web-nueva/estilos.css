@@ -287,7 +287,7 @@ p{margin:0}
 .gal .th button{border-radius:12px;background:var(--cre);padding:6px;box-shadow:inset 0 0 0 1px transparent}
 .gal .th button.on{box-shadow:inset 0 0 0 1.5px var(--ink)}
 .gal .main{background:var(--cre);border-radius:24px;aspect-ratio:1/1;display:grid;place-items:center;overflow:hidden}
-.gal .main img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.gal .main img{width:100%;height:100%;object-fit:contain}
 .buy h1{font-size:clamp(30px,3.2vw,42px);font-weight:400;letter-spacing:-.025em;line-height:1.08}
 .buy .pres{color:var(--mu);margin-top:6px}
 .buy .intro{margin-top:18px;color:var(--ink2)}
